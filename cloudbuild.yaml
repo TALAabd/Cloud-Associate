@@ -1,0 +1,7 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/technical-assignment-428706/technical-assignment', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/technical-assignment-428706/technical-assignment']
+images:
+  - 'gcr.io/technical-assignment-428706/technical-assignment'
